@@ -12,10 +12,27 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class Utils extends BasePage{
+//1). clicking elements
+    public static void clickElements(By by) {
+        driver.findElement( by ).click();
+
+    }
+//1) Clicking element
+        public void clickElement(By by) {
+
+            driver.findElement( by ).click();
+        }
     //2) Clear Text form inout box/area
     public static void clearField(By by) {
         driver.findElement( by ).clear();
     }
+    //3)  Enter text in input field
+    public static void enterText(By by)
+    {
+        driver.findElement( by ).sendKeys( );
+    }
+
+
 
     //3)  Enter text in input field
     public static void enterText(By by, String text) {
