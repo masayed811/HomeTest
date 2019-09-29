@@ -27,8 +27,9 @@ public class Utils extends BasePage{
         driver.findElement( by ).clear();
     }
     //3)  Enter text in input field
-    public static void enterText(By by)
+    public static void clearAndenterText(By by)
     {
+        driver.findElement( by ).clear();
         driver.findElement( by ).sendKeys( );
     }
 

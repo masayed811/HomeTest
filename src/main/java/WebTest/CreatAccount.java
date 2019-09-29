@@ -17,7 +17,7 @@ public class CreatAccount {
     public void userClickOnSignIn()
     {
         clickElements(_clickOnSignIn);
-        enterText(_enterEmail);
+       // enterText(_enterEmail);
         clickElements(_clickOnCreateAcc);
         Assert.assertEquals("An account using this email address has already been registered. Please enter a valid password or request a new one.\n",_errorMessage);
     }

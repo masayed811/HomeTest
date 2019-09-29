@@ -1,6 +1,6 @@
 @CraetAccount
-Feature: User should able to creat an account
-  Scenario:
+Feature: Craete account
+  Scenario:User should able to creat an account
     Given user is on home page
     When user click on singIn button
     And user enter  already register email id

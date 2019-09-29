@@ -24,9 +24,9 @@ public class ContractUs extends Utils {
         {
             clickElements(_SelcetSubject);
             clickElements(_ClickOnCustomerService);
-            enterText(_enterEmail);
+           // enterText(_enterEmail);
            // enterText(  _enterOrderReferenc );
-            enterText(_enterMessage);
+            //enterText(_enterMessage);
             clickElements(_clickOnSendButton);
             Assert.assertEquals("Your message has been successfully sent to our team.",_verifyUserSendMessageSuccessfully);
         }

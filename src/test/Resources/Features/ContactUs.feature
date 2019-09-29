@@ -1,6 +1,8 @@
+Feature:Contact Us
+
 @ContactUs
-Feature: User should able send message to customer service
-  Scenario:
+
+  Scenario:User should able send message to customer service
     Given user is on home page
     When user click on contactUs
     And user select customer service
