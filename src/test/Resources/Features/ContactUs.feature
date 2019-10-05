@@ -1,6 +1,6 @@
-Feature:Contact Us
-
 @ContactUs
+
+Feature:Contact Us
 
   Scenario:User should able send message to customer service
     Given user is on home page
