@@ -23,6 +23,7 @@ public class Hooks extends Utils{
 
         @Before
         public  void setBrowser(){
+//
             browserSelector.setUpBrowser();
             driver.manage().timeouts().implicitlyWait( 20, TimeUnit.MILLISECONDS );
             driver.manage().window().fullscreen();

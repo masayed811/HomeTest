@@ -8,11 +8,13 @@ import org.openqa.selenium.ie.InternetExplorerOptions;
 
 public class BrowserSelector extends Utils {
     LoadProp loadProp = new LoadProp();
+// static  final  String browserName = System.getProperty("browser");
+
 
     public void setUpBrowser() {
 
 //        String browserName = loadProp.getProperty( "browser" );
-        String browserName = System.getProperty( "browser" );
+        String browserName = loadProp.getProperty( "browser" );
 //        System.out.println(browserName);
 
 
@@ -25,9 +27,11 @@ public class BrowserSelector extends Utils {
             driver = new FirefoxDriver();
             driver.manage().window().fullscreen();
         } else if (browserName.equalsIgnoreCase( "chrome" )) {
-            System.setProperty( "webdriver.chrome.driver", "src\\test\\Resources\\BrowserDriver\\chromedriver.exe" );
+
             ChromeOptions options = new ChromeOptions();
             options.addArguments( "--disable-infobars" );
+            System.setProperty( "webdriver.chrome.driver", "src\\test\\Resources\\chromedriver.exe" );
+
             options.addArguments( "--disable-extension" );
             options.addArguments( "--disable-setUpBrowser-side-navigation" );
             options.addArguments( "--incognito" );
